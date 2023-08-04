@@ -11,11 +11,6 @@
   grid-template-columns: 1fr 2fr 1fr;
 }
 
-.subgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-}
 
 .subgrid>div {
   background: rgba(0, 0, 0, .3);
