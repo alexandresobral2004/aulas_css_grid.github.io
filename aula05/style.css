@@ -3,6 +3,18 @@
   display: grid;
 }
 
+.grid-template-1 {
+  grid-template: 50px 1fr / 100px 1fr 100px;
+}
+
+.grid-template-2 {
+  grid-template:
+    "logo nav nav" 50px
+    "sidenav content advert" 150px
+    "sidenav footer footer" 100px
+    / 100px 1fr 50px;
+}
+
 .logo {
   grid-area: logo;
 }
@@ -25,50 +37,6 @@
 
 .footer {
   grid-area: footer;
-}
-
-.grid-template-areas-1 {
-  grid-template-areas:
-    "logo nav nav"
-    "sidenav content advert"
-    "sidenav footer footer"
-  ;
-}
-
-.grid-template-areas-2 {
-  grid-template-areas:
-    "sidenav logo nav"
-    "sidenav content advert"
-    "sidenav content footer"
-  ;
-}
-
-.grid-template-areas-3 {
-  grid-template-areas:
-    "logo logo"
-    "nav nav"
-    "content content"
-    "sidenav advert"
-    "footer footer"
-  ;
-}
-
-.grid-template-areas-4 {
-  grid-template-columns: 30% 60% 10%;
-  grid-template-rows: 50px 150px 50px;
-  grid-template-areas:
-    "logo nav nav"
-    "sidenav content advert"
-    "sidenav footer footer"
-  ;
-}
-
-.grid-template-areas-5 {
-  grid-template-areas:
-    "logo content nav"
-    ". content advert"
-    "sidenav footer ."
-  ;
 }
 
 /* Grid Item */
