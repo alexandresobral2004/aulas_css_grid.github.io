@@ -70,10 +70,13 @@ body>div {
   padding: 40px 0;
 }
 
-body>div:nth-of-type(even) {
-  background: rgba(0, 0, 0, .03);
+/*Adiciona fundo cinza nas divs*/
+body>div:nth-of-type(2) {
+  background: rgba(61, 58, 58, 0.03);
 }
 
+
+/*Aplica essa config no body, div e na img*/
 body>div>img {
   display: block;
   margin: 0 auto;

@@ -1,14 +1,17 @@
 /* Grid */
 .grid {
   display: grid;
+  gap:10px;
 }
-
 .logo {
   grid-area: logo;
 }
 
 .nav {
   grid-area: nav;
+}
+.menu {
+  grid-area: menu;
 }
 
 .content {
@@ -17,6 +20,10 @@
 
 .sidenav {
   grid-area: sidenav;
+}
+
+.sidebar {
+  grid-area: sidebar;
 }
 
 .advert {
@@ -45,7 +52,7 @@
 
 .grid-template-areas-3 {
   grid-template-areas:
-    "logo logo"
+    "logo logo" 
     "nav nav"
     "content content"
     "sidenav advert"
@@ -54,7 +61,7 @@
 }
 
 .grid-template-areas-4 {
-  grid-template-columns: 30% 60% 10%;
+  grid-template-columns: 30% 50% 20%;
   grid-template-rows: 50px 150px 50px;
   grid-template-areas:
     "logo nav nav"
@@ -70,10 +77,32 @@
     "sidenav footer ."
   ;
 }
+.grid-template-areas-6 {
+  grid-template-columns: 100px 400px ;
+  grid-template-rows: 100px 100px 100px;
+  grid-template:
+    "logo nav nav" 100px
+    "sidenav content content" 100px
+    "sidenav footer footer" 100px 
+    / 100px 400px
+  ;
+}
+
+/*CONFIGURA O GRID TEMPLATE + LINHAS E COLUNAS*/
+.grid-template-areas-7 {
+  grid-template:
+    "logo nav nav" 100px
+    "sidenav content content" 100px
+    "sidenav footer footer" 100px 
+    / 100px 400px
+  ;
+}
+
+
 
 /* Grid Item */
 .item {
-  margin: 5px;
+  margin: 0px;
   background: tomato;
   text-align: center;
   font-size: 1.5em;
